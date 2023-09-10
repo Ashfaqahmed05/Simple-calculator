@@ -12,42 +12,47 @@
     }
     .main{
         width: 100%;
-        height: 100%;
+        height: 100vh;
         margin: 0%;
         padding: 0%;
-        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9_KpznR7BexPYOdAeFBBaAIboizPfLcHU_w&usqp=CAU);
+        background-image: url(https://img.freepik.com/free-vector/white-abstract-background-design_23-2148825582.jpg?size=626&ext=jpg&ga=GA1.1.1965150587.1688462650&semt=ais);
         background-size: 100%;
         display: flex;
         justify-content: center;
 
     }
     .calculator{
-        margin-top: 80px ;
+        margin-top: 5vh ;
         width: 300px;
-        height: calc(100%-80);
+        height: 500px;
         background-color: rgba(35, 33, 33, 0.862);
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
         padding: 10px;
         margin-bottom: 20px;
     }
     #display{
+        margin-top: 20px;
         height: 80px;
-        width: 97%;
-        border: 3px inset rgb(47, 43, 43); 
+        width: 83%;
+        background-color: transparent;
+        padding: 0px 20px;
+        border: 1px solid white; 
+        border-radius: 10px;
+        color: azure;
         text-align: end;
         font-size: 30px;
         
     }
     
     .buttons{
-        padding-top: 70px;
+        padding-top: 50px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         padding-left: 5px;
     }
     .button{
-        height: 70px;
-        width: 70px;
+        height: 60px;
+        width: 60px;
         margin-top: 20px;
         font-size: 25px;
         color: beige;
@@ -62,6 +67,7 @@
     }
     .button:hover{
         background-color: azure;
+        padding: 2px;
         color: black;
     }
     .button:active{
@@ -80,7 +86,7 @@
 <body>
     <div class="main">
         <div class="calculator">
-            <input type="text" id="display" readonly>
+            <input type="text" id="display" placeholder="0" readonly>
             <div class="buttons">
                 <div class="button" onclick="appendToDisplay('7')">7</div>
                 <div class="button" onclick="appendToDisplay('8')">8</div>
